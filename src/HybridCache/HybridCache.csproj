@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+	<Import Project="..\..\configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Version>$(Version)</Version>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<Authors>tanyongzheng</Authors>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Description>$(Description)</Description>
+		<PackageReleaseNotes>$(ReleaseNotes)</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EasyCaching.Core" Version="$(EasyCachingVersion)" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+	<Import Project="..\..\configureawait.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Version>$(Version)</Version>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<Authors>tanyongzheng</Authors>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<Description>$(Description)</Description>
+		<PackageReleaseNotes>$(ReleaseNotes)</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EasyCaching.HybridCache" Version="$(EasyCachingVersion)" />
+		<PackageReference Include="EasyCaching.InMemory" Version="$(EasyCachingVersion)" />
+		<PackageReference Include="EasyCaching.Redis" Version="$(EasyCachingVersion)" />
+		<PackageReference Include="EasyCaching.Serialization.SystemTextJson" Version="$(EasyCachingVersion)" />
+		<PackageReference Include="EasyCaching.Bus.RabbitMQ" Version="$(EasyCachingVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HybridCache\HybridCache.csproj" />
+	</ItemGroup>
+
+</Project>
