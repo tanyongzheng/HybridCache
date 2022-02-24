@@ -1,7 +1,7 @@
 <Project>
 
   <PropertyGroup>
-	  <EasyCachingVersion>1.4.0</EasyCachingVersion>
+	  <EasyCachingVersion>1.5.0</EasyCachingVersion>
   </PropertyGroup>
 
 </Project>
